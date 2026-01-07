@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EyeGuard Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>EyeGuard AI</h1>
+    <div id="container">
+        <video id="webcam" autoplay playsinline></video>
+        <canvas id="output_canvas"></canvas>
+    </div>
+    
+    <div id="status-panel">
+        <p id="distance-text">Distance: --</p>
+        <button id="startButton">Start Monitoring</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision/vision_bundle.js" crossorigin="anonymous"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>

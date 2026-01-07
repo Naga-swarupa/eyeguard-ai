@@ -1,0 +1,13 @@
+/* style.css */
+body { font-family: sans-serif; text-align: center; background: #121212; color: white; }
+#container { position: relative; display: inline-block; }
+video { transform: rotateY(180deg); width: 100%; max-width: 500px; border-radius: 10px; }
+canvas { position: absolute; top: 0; left: 0; transform: rotateY(180deg); width: 100%; }
+
+.too-close { border: 5px solid red; animation: shake 0.2s; }
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(5px); }
+    50% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
